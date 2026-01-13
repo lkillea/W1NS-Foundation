@@ -30,6 +30,21 @@ button:hover {
   background-color: #1b5e20;
 }
 
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 .indent {
   margin-left: 40px;
 }
