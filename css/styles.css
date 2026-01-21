@@ -44,9 +44,13 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+.donation-buttons {
+  margin: 20px 0;
+}
 
+.donation-buttons button {
+  margin: 8px;
+}
 .indent {
   margin-left: 40px;
 }
-
-
