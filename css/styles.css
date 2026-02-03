@@ -6,9 +6,10 @@ body {
 }
 
 header {
-  background-color: #C66A4A;
-  color: #FAF3E0;
+  background-color: #C66A4A; /* terracotta */
+  color: white;
   padding: 40px 20px;
+  text-align: center;
 }
 
 section {
@@ -18,16 +19,17 @@ section {
 }
 
 button {
-  background-color: #2e7d32;
+  background-color: #C66A4A;
   color: white;
   border: none;
   padding: 12px 24px;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 button:hover {
-  background-color: #1b5e20;
+  background-color: #A6533A; /* darker terracotta */
 }
 
 nav {
@@ -44,6 +46,16 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+h1, h2, h3 {
+  color: #C66A4A;
+}
+
+header h1,
+header p {
+  color: white;
+}
+
 .donation-buttons {
   margin: 20px 0;
 }
