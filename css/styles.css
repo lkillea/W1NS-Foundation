@@ -126,4 +126,37 @@ button:hover {
     margin-left: 20px; /* smaller indent on mobile */
   }
 }
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#formMessage {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #71BC78;
+}
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+#playersContainer {
+  margin: 20px 0;
+}
+
+#playersContainer h3 {
+  color: #C66A4A;
+  margin-bottom: 10px;
+}
 
