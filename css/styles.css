@@ -1,10 +1,15 @@
-body {
+/* ===== Base styles ===== */
+body { 
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
+  background-color: #FAF3E0; /* cream background added */
+  color: #2E2E2E;
+  line-height: 1.6;
 }
 
+/* ===== Header ===== */
 header {
   background-color: #C66A4A; /* terracotta */
   color: white;
@@ -12,26 +17,7 @@ header {
   text-align: center;
 }
 
-section {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-button {
-  background-color: #71BC78; /*Fern */
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: #A6533A; /* darker terracotta */
-}
-
+/* ===== Navigation ===== */
 nav {
   margin-top: 20px;
 }
@@ -41,12 +27,21 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
+  display: inline-block;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* ===== Sections ===== */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ===== Headings ===== */
 h1, h2, h3 {
   color: #C66A4A;
 }
@@ -56,6 +51,28 @@ header p {
   color: white;
 }
 
+/* ===== Buttons ===== */
+button {
+  background-color: #71BC78; /* fern green */
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  max-width: 300px;
+}
+
+button:hover {
+  background-color: #A6533A; /* darker terracotta */
+}
+
+/* ===== Indented paragraphs ===== */
+.indent {
+  margin-left: 40px;
+}
+
+/* ===== Donation buttons ===== */
 .donation-buttons {
   margin: 20px 0;
 }
@@ -63,11 +80,50 @@ header p {
 .donation-buttons button {
   margin: 8px;
 }
-.indent {
-  margin-left: 40px;
-}
 
+/* ===== Details spacing ===== */
 .details p {
   margin: 8px 0;
+}
+
+/* ================================= */
+/* ===== MOBILE RESPONSIVENESS ===== */
+/* ================================= */
+
+@media (max-width: 600px) {
+
+  header {
+    padding: 25px 15px;
+  }
+
+  nav a {
+    display: block;   /* stack navigation vertically */
+    margin: 8px 0;
+  }
+
+  section {
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  button {
+    width: 100%;      /* full-width buttons on mobile */
+    max-width: none;
+  }
+
+  .indent {
+    margin-left: 20px; /* smaller indent on mobile */
+  }
 }
 
